@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "197786741274",
+    "project_id": "wise-6b980",
+    "storage_bucket": "wise-6b980.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:197786741274:android:765b11ee54e4c7b9acbfa3",
+        "android_client_info": {
+          "package_name": "com.example.wise"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "197786741274-tmikroacgguvggljp084u84oonj7a1q7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wise",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "197786741274-a3hol784h7d45kncu5dan59tt5c9scke.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbKMtEawoTQsY6yBt1AxCjpE4nDkUwO9Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "197786741274-4d3cto9acqjlncctcpmp55a3spc7jpat.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "197786741274-7d0fnltsjp5ol5qj19rd1hmfhet9j2mr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.wise"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:197786741274:android:22bd9344912d809facbfa3",
+        "android_client_info": {
+          "package_name": "com.mycompany.wise"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "197786741274-0hve5eeim1kl269pi794vhmdd08ds0gl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mycompany.wise",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "197786741274-a3hol784h7d45kncu5dan59tt5c9scke.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbKMtEawoTQsY6yBt1AxCjpE4nDkUwO9Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "197786741274-4d3cto9acqjlncctcpmp55a3spc7jpat.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "197786741274-7d0fnltsjp5ol5qj19rd1hmfhet9j2mr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.wise"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

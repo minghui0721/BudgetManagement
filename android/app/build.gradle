@@ -1,0 +1,61 @@
+plugins {
+    id "com.android.application"
+    id 'com.google.gms.google-services'  // Required for Firebase
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"  // Flutter plugin (must be last)
+}
+
+android {
+    namespace = "com.example.wise"
+    compileSdk = flutter.compileSdkVersion
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
+
+    defaultConfig {
+        applicationId = "com.example.wise"   // Unique application ID
+        minSdk = 23                          // Minimum SDK version
+        targetSdk = flutter.targetSdkVersion // Target SDK
+        versionCode = flutter.versionCode    // Version code from Flutter
+        versionName = flutter.versionName    // Version name from Flutter
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug  // Change for release signing config
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
+
+dependencies {
+    // ML Kit text recognition dependencies
+    implementation 'com.google.mlkit:text-recognition-chinese:16.0.0'
+    implementation 'com.google.mlkit:text-recognition-devanagari:16.0.0'
+    implementation 'com.google.mlkit:text-recognition-japanese:16.0.0'
+    implementation 'com.google.mlkit:text-recognition-korean:16.0.0'
+    implementation 'com.google.firebase:firebase-auth:latest_version'  // Add Firebase Authentication
+
+    dependencies {
+     // Import the BoM for the Firebase platform
+    implementation(platform("com.google.firebase:firebase-bom:33.5.1"))
+
+    // Add the dependency for the Firebase Authentication library
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-auth:21.1.0'
+    implementation 'com.google.android.gms:play-services-auth:20.4.0'
+}
+}
+
+// Apply Google services configuration for Firebase
+apply plugin: 'com.google.gms.google-services'
